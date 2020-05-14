@@ -23,3 +23,15 @@
 <app-server></app-server>
 <app-server></app-server>
 
+<!-- assignment data binding-->
+
+<input
+type="text"
+class="form-control"
+[(ngModel)] = "userName"
+(input)="onUpdateUserName()">
+<p>{{ userName }}</p>
+
+<button class="btn btn-primary" 
+    [disabled]="resetUserName"
+    (click)="onResetUserName()">Reset</button>

@@ -1,0 +1,9 @@
+<p>directive works!</p>
+<button class="btn btn-primary" 
+(click)="onButtonClick()">Display details</button>
+<p *ngIf="showPassword">Secret password = tuna</p>
+<p  *ngFor="let noClick of clickList; let i = index "   
+    [ngStyle]="{backgroundColor: i > 5 ? 'blue' : 'transparent' }"
+    [ngClass]="{online: i > 5,'white-text' : noClick > 5}">{{noClick}}</p>
+
+<!-- u can use either i or noClick for evaluvation-->

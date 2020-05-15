@@ -14,8 +14,17 @@ export class ServersComponent implements OnInit {
   allowNewServer = false;
   serverCreationStatus = 'No Server was created!';
   serverName = 'ServerName is';
+
   userName = 'userName';
   resetUserName = false;
+
+  //directive
+  serverCreated = false;
+
+  //ngFor directive
+
+  serverList = ['TestServer' , 'TestServer2'];
+
   constructor() { 
     setTimeout( ()=> {
       this.allowNewServer = true;
@@ -28,6 +37,8 @@ export class ServersComponent implements OnInit {
 
   onCreateServer() {
     this.serverCreationStatus = 'server was created Name is '+this.serverName;
+    this.serverCreated = true;
+    this.serverList.push(this.serverName);
   }
 
   onUpdateServerName(event:any) {

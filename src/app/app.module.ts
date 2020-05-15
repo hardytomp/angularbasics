@@ -9,6 +9,7 @@ import { ServersComponent } from './servers/servers.component';
 import { WarningalertComponent } from './warningalert/warningalert.component';
 import { SuccessalertComponent } from './successalert/successalert.component';
 import { DatabindingComponent } from './databinding/databinding.component';
+import { DirectiveComponent } from './directive/directive.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { DatabindingComponent } from './databinding/databinding.component';
     ServersComponent,
     WarningalertComponent,
     SuccessalertComponent,
-    DatabindingComponent
+    DatabindingComponent,
+    DirectiveComponent
   ],
   imports: [
     BrowserModule,
